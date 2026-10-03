@@ -2,6 +2,10 @@
 
 An end-to-end Data Science project that uses historical e-commerce sales data and Machine Learning to analyze demand patterns and forecast product sales.
 
+## 🚀 Live Demo
+
+[👉 View the Live Sales Forecasting Dashboard](https://sales-forecasting-ml-zf6ti785yyezhjtcpoazm.streamlit.app/)
+
 ## 🎯 Problem Statement
 
 E-commerce businesses need to understand customer demand to make better inventory and sales decisions.
