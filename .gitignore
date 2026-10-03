@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.venv/
+venv/
+.envData/sales_cleaned_CA1.csv
+Data/sales_train_evaluation.csv
+Data/sell_prices.csv
