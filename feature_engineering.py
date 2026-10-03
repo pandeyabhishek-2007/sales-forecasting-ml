@@ -2,9 +2,14 @@ import pandas as pd
 
 # Load cleaned dataset
 df = pd.read_csv("Data/sales_cleaned_CA1.csv")
+print("Number of products:", df["item_id"].nunique())
+print("Products:", df["item_id"].unique())
 
-# Select one product
-product = "FOODS_3_090"
+# Select product from Streamlit dropdown
+product = st.selectbox(
+    "Select Product",
+    df["item_id"].unique()
+)
 
 product_df = df[df["item_id"] == product].copy()
 

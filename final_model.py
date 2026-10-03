@@ -87,7 +87,17 @@ model.fit(X_train, y_train)
 # =========================
 
 predictions = model.predict(X_test)
+# Save actual vs predicted values
+test_results = pd.DataFrame({
+    "date": product_df.iloc[split_index:]["date"].values,
+    "Actual Sales": y_test.values,
+    "Predicted Sales": predictions
+})
 
+test_results.to_csv(
+    "Data/test_predictions.csv",
+    index=False
+)
 mae = mean_absolute_error(y_test, predictions)
 rmse = mean_squared_error(y_test, predictions) ** 0.5
 r2 = r2_score(y_test, predictions)
